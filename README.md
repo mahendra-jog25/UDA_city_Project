@@ -21,15 +21,25 @@ Q6: How does medical condition and enrolling in scholarship, and sms improved in
 
 ## Observation before data cleaning:
 
-1. Data set consists of 110527 values and 14 features.\
-2. No missing and duplicated value for data.\
-3. Age ranges from -1 to 115, need to clean further. \
-4. Values for "Age", "Scholarship", "Hipertension", "Diabetes", "Alcoholism","SMS_received" has values of 0 and 1.\
-5. Feature "Handcap" has value from 0 to 4.\
-6. "AppointmentID" holds all unique values dont hold much important feature for futher analysis and can be dropped.\
-7. "Patiend ID" holds approprimately 44% of duplicated values.\
-8. Values for "ScheduledDay" and "AppointmentDay" are dates with dtype as object, need to coverted into datatime.\
-9. 'AppointmentDay' has 27 unique values and where as ScheduledDay has 103549.\
-10. 'AppointmentDay' ranges from april to june for year 2016.\
-11. Values for "Neighbourhood", "Gender" and "No-show" has dtype as strings.\
+1. Data set consists of 110527 values and 14 features.
+2. No missing and duplicated value for data.
+3. Age ranges from -1 to 115, need to clean further. 
+4. Values for "Age", "Scholarship", "Hipertension", "Diabetes", "Alcoholism","SMS_received" has values of 0 and 1.
+5. Feature "Handcap" has value from 0 to 4.
+6. "AppointmentID" holds all unique values dont hold much important feature for futher analysis and can be dropped.
+7. "Patiend ID" holds approprimately 44% of duplicated values.
+8. Values for "ScheduledDay" and "AppointmentDay" are dates with dtype as object, need to coverted into datatime.
+9. 'AppointmentDay' has 27 unique values and where as ScheduledDay has 103549.
+10. 'AppointmentDay' ranges from april to june for year 2016.
+11. Values for "Neighbourhood", "Gender" and "No-show" has dtype as strings.
 12. Many typo and spelling mistake for columns.
+
+## Data Cleaning:
+
+### Steps taken for data cleaning:
+1. Fixing columns for typo, inconsistendcy and spelling mistakes.
+2. Fixing dtype for columns scheduledday' and 'appointmentday to datetime and created new feature-'Awaiting days'.
+3. Treatment of outlier for Awaiting days.
+4. Created new feature by extraction 'weekday'.
+5. Treatment of outlier for age.
+6. Dropping features which are unique and least important.
