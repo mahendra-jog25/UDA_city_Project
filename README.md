@@ -63,3 +63,34 @@ Question 3 : How age of patient impacting for showing/not showing up appointment
 4. Male with less age are most likely to never show up appointment when compared with whom showed up appointment.
 5. Age can be important feature in predicting for appointment showing up and not showing due to patient with more age are most likely to be showing up appointment.
 
+Question 4 :Does more awaiting days leading for appointment to never showed up and on which day?
+1. As expected as number of awaiting days increase there are more cases are of not showing up appointment.
+2. Monday has majority of appointment which never showed up and least on saturday and visa vera.
+3. Average awaiting days for not showing up was almost twice the average awaiting days for showing up.
+4. Awaiting days turn out to be important feature in predicting for appointment in showing up and for not showing up.
+
+Question 5: Wat are top 15 neighbourhood who showed up and never showed up?
+1. Not much difference between showed and not showed cases between neighbourhood.
+
+Question 6: How does medical condition, enrolling in scholarship, and sms improved in showing up appointments?
+1. Patients who didn't enrolled in scholorship has more show case i.e 72% when compared to those who are enrolled 7.5%.
+2. Ratio for showed up to no showed scholorship is approximately 80%
+3. The group who received a SMS reminder did not show up more often compared to those who did not receive a reminder.
+4. The group not having received a reminder has a much smaller proportion of no shows.
+5. Patient with medical condition like hypertension, diabetes and alcholism has showed up for appointment in less as compared with patient without any medical condion.
+6. Proportion of never showed for all medical condition are approximately smilar for all with showed up case.
+7. Handicap of value '0' have more showed up when compared to those no showed up and for other values.
+
+## Conclusions
+1. My analysis revealed that patients age and number of awaiting days for appointment could be an important feature in determining if patient is going to show up for appointment or not.
+
+2. Futhere patient without any of the in the dataset stated diseases have higher no-show rates compared to those having a disease. Thereby it does not make much of a difference, which disease (hypertension, diabetes, alcoholism or handicap) the patient suffers.
+
+3. Enrolling in scholorship has not much impact on predicting for possiblity if patient in going to turn up for show or not.
+
+4. Lastly, and most surprisingly is the fact that for the appointments within this dataset a SMS-reminding the patients of their upcoming appointment made things worse.
+
+## Limitations
+1. It appears that the dataset is only based on 27 unique dates worth of data spread over April, May and June (27 unique dates in AppointmentDay) and therefore it doesn't provide a representative sample for predicting whether a patient is likely to not show up on a date outside of those 27 days. If the data was based on longer date range, then the conclusions drawn might have been different and the features in feature selection may also have been completely different.
+
+2. Missing features which may have been useful to this analysis could be whether a patient in the past has been a no-show, or a patient's post-code, clinic distance from neighbourhood, or whether the patient is employed or unemployed or even the reason they scheduled an appointment.
