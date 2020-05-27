@@ -43,3 +43,10 @@ Q6: How does medical condition and enrolling in scholarship, and sms improved in
 4. Created new feature by extraction 'weekday'.
 5. Treatment of outlier for age.
 6. Dropping features which are unique and least important.
+
+## Exploratory Data Analysis:
+
+Question 1 : What is the overall appointment who showed and never showed up?\
+1. Majority of appointment are showed up by 80% when compared to are never showed up by 20%,
+2. If it would be for machine learning, then this target variable can create imbalance problem.
+
